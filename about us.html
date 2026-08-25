@@ -144,7 +144,39 @@
             color: none;
             border-bottom: none;
         }
-
+    @media (max-width: 768px)|{
+        ul{
+            position: static;
+            margin-left: 0;
+            flex-direction: column;
+            align-items: center;
+        }
+        li{
+            margin: 10px 0;
+            font-size: 18px;
+        }
+        .logo h1{
+            font-size: 28px;
+            left: 90px;
+        }
+        .product img, .brand img{
+            width: 90%;
+            height: auto;
+            margin: 20px auto;
+            display: block;
+        }
+       .write-up, .content{
+           position: static;
+           text-align: center;
+           margin: 20px;
+       }
+       .write-up #topic, .content #too{
+           font-size: 28px;
+       }
+        .write-up p, .content p{
+            font-size: 16px;
+        }
+    }
 </style>
 <body>
             <nav>
