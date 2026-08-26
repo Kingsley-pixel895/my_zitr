@@ -88,21 +88,21 @@
     align-items: center;
     overflow: hidden;
 }
+
 .slider {
+    --slider-height: 70px;
+
     color: red;
     font-family: Algerian, sans-serif;
     margin-left: 12px;
-    height: 70px;
+    height: var(--slider-height);
     overflow: hidden;
+    animation: slider1 6s ease-in-out infinite;
 }
 
 .slider div {
-    height: 70px;
-    line-height: 70px;
-}
-
-.slider {
-    animation: slider1 6s ease-in-out infinite;
+    height: var(--slider-height);
+    line-height: var(--slider-height);
 }
 
 @keyframes slider1 {
@@ -111,11 +111,11 @@
     }
 
     30%, 55% {
-        transform: translateY(-70px);
+        transform: translateY(calc(var(--slider-height) * -1));
     }
 
     60%, 85% {
-        transform: translateY(-140px);
+        transform: translateY(calc(var(--slider-height) * -2));
     }
 
     90%, 100% {
@@ -352,11 +352,6 @@
                 padding: 0 15px;
                 box-sizing: border-box;
             }
-            .title{
-                font-size: 35px;
-                line-height: 50px;
-                height: 50px;
-            }
             .content p{
                 font-size: 16px;
                 line-height: 22px;
@@ -365,18 +360,28 @@
                 display: none;
             }
             
-            .slider div {
-        height: 50px;
+             .title {
+        font-size: 35px;
         line-height: 50px;
+        height: 50px;
+        width: 100%;
+        white-space: nowrap;
     }
-    
+
     .slider {
+        --slider-height: 50px;
+
         height: 50px;
         margin-left: 8px;
+        overflow: hidden;
         animation: slider1 6s ease-in-out infinite;
     }
 
-
+    .slider div {
+        height: 50px;
+        line-height: 50px;
+    }
+}
     @keyframes slider1 {
         0%, 25% {
             transform: translateY(0);
