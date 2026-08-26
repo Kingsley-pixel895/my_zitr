@@ -87,7 +87,7 @@
             background-position: right;
             color:red;
         }
- .slider{
+      .slider{
             color: red;
             font-family: ALGERIAN;
             margin-left: 12px;
@@ -361,54 +361,56 @@
     .content p br {
         display: none;
     }
-
-    /* TEXT SLIDER */
-  .title {
-        font-size: 35px;
-        height: 50px;
-        line-height: 50px;
-    }
-   .slider {
-        height: 50px;
-        margin-left: 8px;
-    }
-
-    .slider div {
-        height: 50px;
-        line-height: 50px;
-    }
-
-    @keyframes slider1 {
-        0%, 30% {
-            transform: translateY(0);
-        }
-
-        33%, 63% {
-            transform: translateY(-50px);
-        }
-
-        66%, 96% {
-            transform: translateY(-100px);
-        }
-
-        100% {
-            transform: translateY(0);
-        }
-    }
-
-    /* BUTTON */
     button {
         font-size: 14px;
         padding: 12px 18px;
     }
-
-    /* IMAGE SLIDER */
     #slider figure img {
         height: 250px;
         object-fit: cover;
     }
-
-    /* ZITR SECTION */
+       .title{
+            color: white;
+            font-size: 70px;
+            line-height: 100px;
+            font-weight: bold;
+            height: 100px;
+            text-align: left;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+       }
+    .slider{
+            color: red;
+            font-family: ALGERIAN;
+            margin-left: 12px;
+            box-sizing: border-box;
+            animation: slider1 6s linear infinite;
+        }
+        @keyframes slider1{
+            0%{
+                margin-top: -400px;
+            }
+            5%{
+                margin-top: -200px;
+            }
+            30%{
+                margin-top: -200px;
+            }
+            35%{
+                margin-top: 0%;
+            }
+            65%{
+                margin-top: 0%;
+            }
+            70%{
+                margin-top: 200px;
+            }
+            100%{
+                margin-top: 200px;
+            }
+        }
     .col-2 {
         flex-basis: 100%;
         text-align: center;
