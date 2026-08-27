@@ -86,24 +86,21 @@
             color: red;
             border-bottom: 2px solid red
         }
-        .product-image{
-           border-radius: 15px;
-           width: 30%;
-           height: 400px;
-           object-fit: cover;
-           cursor: pointer;
-           display: block;
-           margin: 5% 0 0 5%;
-       }
-        label .product-image.alt{
-           display: none;
-       }
-        #image-toggle:checked + label .product-image.default{
-           display: none;
-       }
-        #image-toggle:checked + label .product-image.alt{
-           display: block;
-       }
+          .product-image{
+            border-radius: 15px;
+            height: 400px;
+            width: 30%;
+            object-fit: cover;
+            cursor: pointer;
+            margin: 5% 0 0 5%;
+        }
+        #image-toggle{
+            display: none;
+        }
+        #image-toggle:checked +
+        label .product-image{
+            content: url(Images/WhatsApp\ Image\ 2026-08-17\ at\ 14.36.08.jpeg);
+        }
         .write-up{
             color: white;
             position: absolute;
@@ -222,11 +219,11 @@
                 </ul> 
         </div>
     </nav>
-    <input type="checkbox" id="image-toggle" style="display:none;">
-<label for="image-toggle">
-  <img class="product-image default" src="./Images/WhatsApp Image 2026-08-14 at 19.01.01.jpeg" alt="product">
-  <img class="product-image alt" src="./Images/WhatsApp Image 2026-08-14 at 19.01.02.jpeg" alt="product alt">
-</label>
+<input type="checkbox" id="image-toggle">
+    <label for="image-toggle">
+        <img class="product-image"
+         src="Images/WhatsApp Image 2026-08-17 at 14.36.07.jpeg" alt="product">
+    </label>
     <div class="write-up">
         <p id="topic">ZITR</p>
         <h1>White dead end polo</h1>
