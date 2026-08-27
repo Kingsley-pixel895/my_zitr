@@ -89,11 +89,20 @@
             color: none;
             border-bottom: none;
         }
-        .product img{
+         .product-image{
             border-radius: 15px;
             height: 400px;
             width: 30%;
+            object-fit: cover;
+            cursor: pointer;
             margin: 5% 0 0 5%;
+        }
+        #image-toggle{
+            display: none;
+        }
+        #image-toggle:checked +
+        label .product-image{
+            content: url(./Images/WhatsApp\ Image\ 2026-08-17\ at\ 14.36.08.jpeg);
         }
         .write-up{
             color: white;
@@ -135,9 +144,6 @@
             margin-right: 600px; 
             margin-top: 20px; 
         }
-          .product img:hover{
-            content: url(Images/WhatsApp\ Image\ 2026-08-17\ at\ 14.36.08.jpeg);
-        }
      @media (max-width:768px) {
         .nav-bar{
             height: auto;
@@ -169,11 +175,7 @@
         .product{
             text-align: center;
         }
-        .product img{
-            width: 85%;
-            height: auto;
-            margin: 30px auto 10px;
-        }
+        
         .write-up{
             position: static;
             width: 90%;
@@ -199,8 +201,20 @@
             margin: 20px auto;
         }
     }
-     .product img:hover{
-            content: url(Images/WhatsApp\ Image\ 2026-08-17\ at\ 14.36.08.jpeg);
+     .product-image{
+            border-radius: 15px;
+            height: 400px;
+            width: 30%;
+            object-fit: cover;
+            cursor: pointer;
+            margin: 5% 0 0 5%;
+        }
+        #image-toggle{
+            display: none;
+        }
+        #image-toggle:checked +
+        label .product-image{
+            content: url(./Images/WhatsApp\ Image\ 2026-08-17\ at\ 14.36.08.jpeg);
         }
 </style>
 <body>
@@ -218,10 +232,11 @@
                 </ul> 
         </div>
     </nav>
-    
-    <div class="product">
-     <img src="./Images/WhatsApp Image 2026-08-17 at 14.36.07.jpeg">
-    </div>
+    <input type="checkbox" id="image-toggle">
+    <label for="image-toggle">
+        <img class="product-image"
+         src="./Images/WhatsApp Image 2026-08-17 at 14.36.07.jpeg" alt="product">
+    </label>
     <div class="write-up">
         <p id="topic">ZITR</p>
         <h1>Black dead end polo</h1>
