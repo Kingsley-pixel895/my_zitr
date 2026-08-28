@@ -105,12 +105,12 @@
         .contact{
           align-items: center;
         }
-        .contact p{
-            font-size: 25px;
-            position: absolute;
-            left:46%;
-            top:116%;
-        }
+       .contact p{
+          font-size: 25px;
+          margin: 0;
+          position: static;
+          color: black;   
+       }
         .contact img{
             height: 50px;
             width: 50px;
@@ -155,7 +155,7 @@
             text-align: center;
         }
        .contact p{
-           display: block;
+           margin: 0;
            font-size: 1.2em;
            color: #333;
         
@@ -168,7 +168,12 @@
         }
         .smedia img{
             margin: 10px;
-        } 
+        }
+        .contact{
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
     }
     @media screen and (min-width: 769px;) {
         .contact p{
