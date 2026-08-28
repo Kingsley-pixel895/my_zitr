@@ -106,10 +106,10 @@
           align-items: center;
         }
        .contact p{
-          font-size: 25px;
-          margin: 0;
-          position: static;
-          color: black;   
+            font-size: 25px;
+            position: absolute;
+            left:46%;
+            top:116%;
        }
         .contact img{
             height: 50px;
@@ -117,7 +117,7 @@
             margin-top: 20px;
             margin-left: -150px;
         }
-        .logo a:hover, .smedia a:hover, .contact-number a:hover{
+        .logo a:hover, .smedia a:hover, .contact p a:hover{
             color: none;
             border-bottom: none;
         }
@@ -174,6 +174,10 @@
             align-items: center;
             gap: 12px;
         }
+       .contact p a:hover{
+            color: none;
+            border-bottom: none;
+       } 
     }
     @media screen and (min-width: 769px;) {
         .contact p{
