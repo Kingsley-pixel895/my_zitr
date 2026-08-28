@@ -105,7 +105,7 @@
         .contact{
           align-items: center;
         }
-        .contact p{
+        .contact-number{
             font-size: 25px;
             position: absolute;
             left:46%;
@@ -154,12 +154,11 @@
             line-height: 50px;
             text-align: center;
         }
-       .contact p {
-        font-size: 25px;
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-        bottom: 90%;
+       .contact-number{
+           display: block;
+           font-size: 1.2em;
+           color: #333;
+        
     }
         .contact img{
             margin: 10px auto;
@@ -170,6 +169,11 @@
         .smedia img{
             margin: 10px;
         } 
+    }
+    @media screen and (min-width: 769px;) {
+        .contact-number{
+            display: none;
+        }
     }
 </style>
 <body>
@@ -198,7 +202,10 @@
         <h3>Contact Us</h3>
         <div class="contact">
            <img src="./Images/whatsapp black.png">
-        <p>09067324856</p
+          <a href="tel:+2348012345678"
+              class="contact-number">
+              +2348012345678
+          </a>
         </div>
         
         <a href="https://www.instagram.com/zitr.xyz/"><img src="./Images/instagram.png"></a>
